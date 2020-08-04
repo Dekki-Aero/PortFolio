@@ -585,7 +585,9 @@ select {
   }
 
   .post .post-preview {
-    height: 70%;
+    height: auto;
+    max-height: 70%;
+    overflow-y: scroll;
   }
 
   #navigation #about-me {
@@ -595,6 +597,19 @@ select {
   #navigation .seperator {
     display: none;
   }
+  /*.post p{
+  	font-size: 0.8em
+  }
+  .post a{
+  	font-size: 0.8em
+  }
+  .post h6{
+  	font-size: 0.8em
+  }*/
+  /*.post p{
+  	overflow: auto;
+  }*/
+
 }
 
 @media screen and (max-width: 1200px) {

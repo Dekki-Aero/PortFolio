@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/Resume.pdf</loc>
+<loc>http://localhost:4000/Resume.pdf</loc>
 <lastmod>2020-07-26T19:36:29+05:30</lastmod>
 </url>
 <url>
-<loc>/caseStudies/walmart.html</loc>
+<loc>http://localhost:4000/caseStudies/walmart.html</loc>
 <lastmod>2020-08-04T10:56:59+05:30</lastmod>
 </url>
 <url>
-<loc>/caseStudies/walmart.slides.html</loc>
+<loc>http://localhost:4000/caseStudies/walmart.slides.html</loc>
 <lastmod>2020-08-01T12:54:12+05:30</lastmod>
 </url>
 <url>
-<loc>/</loc>
+<loc>http://localhost:4000/</loc>
 <lastmod>2020-08-04T13:02:17+05:30</lastmod>
 </url>
 </urlset>
