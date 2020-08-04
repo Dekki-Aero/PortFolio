@@ -584,10 +584,12 @@ select {
     height: 300px;
   }
 
+  .slide:hover .post-preview,
   .post .post-preview {
     height: auto;
-    max-height: 70%;
-    overflow-y: scroll;
+    /*max-height: 70%;*/
+    line-height: 1em;
+    /*overflow-y: scroll;*/
   }
 
   #navigation #about-me {
@@ -600,6 +602,8 @@ select {
   .post:hover {
   transform: none;
   }
+
+
   /*.post p{
   	font-size: 0.8em
   }
