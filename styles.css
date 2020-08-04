@@ -258,7 +258,7 @@ section:nth-child(2)>div>.main-container {
 #preview-shadow {
   background-color: var(--previewShadow);
   width: 300px;
-  height: 190px;
+  height: calc(100%-30px);
   padding-left: 30px;
   padding-top: 30px;
 }
@@ -586,6 +586,14 @@ select {
 
   .post .post-preview {
     height: 70%;
+  }
+
+  #navigation #about-me {
+    display: none;
+  }
+
+  #navigation .seperator {
+    display: none;
   }
 }
 

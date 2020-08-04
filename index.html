@@ -22,6 +22,8 @@
 
     <link rel="stylesheet" href="./styles.css">
     <script src="./jquery-3.5.1.min.js"></script>
+    {% feed_meta %}
+    {% seo %}
 </head>
 
 <body>
@@ -41,7 +43,10 @@
                         <div class="browser-dot" id="dot-3"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a href="#more-about-me-section">About Me</a></li>
+                        <li id="about-me"><a href="#more-about-me-section">About Me</a></li>
+                        <li style="visibility: hidden;" class="seperator">|</li>
+                        <li><a href="#projects-section">My Projects</a></li>
+                        <li style="visibility: hidden;" class="seperator">|</li>
                         <li><a href="#contact-form">Contact</a></li>
                     </ul>
                 </div>
@@ -178,11 +183,12 @@
                             <div class="post">
                                 <!-- <img class="thumbnail" src="./images/IMG_20180919_120814 1.jpg" alt=""> -->
                                 <div>
-                                    <video src="./caseStudies/output_vdo_Trim.mp4" autoplay loop style="
+                                    <!-- <video src="./caseStudies/output_vdo_Trim.mp4" autoplay loop style="
                                     height:400px;
                                     width:300px;
                                     object-fit: fill;
-                                    "></video>
+                                    "></video> -->
+                                    <img class="thumbnail" src="./caseStudies/Self_driving_car.gif" alt="">
                                 </div>
                                 <div class="post-preview">
                                     <h6 class="post-title">Self Driving Car</h6>
