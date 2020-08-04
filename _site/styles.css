@@ -597,6 +597,9 @@ select {
   #navigation .seperator {
     display: none;
   }
+  .post:hover {
+  transform: scale(1.0);
+  }
   /*.post p{
   	font-size: 0.8em
   }
