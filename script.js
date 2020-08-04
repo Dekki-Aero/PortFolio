@@ -114,52 +114,60 @@ formvalidate = () => {
   var email = document.forms["contact-form"]["email"];
   var message = document.forms["contact-form"]["message"];
   var subject = document.forms["contact-form"]["subject"];
-  let validated = false;
+  let emailValidated = false,
+    nameValidated = false,
+    messageValidated = false,
+    subjectValidated = false;
   if (!email.value.includes("@") || email.value.length < 5) {
     if (!subject.classList.contains("error-border")) {
       email.classList.toggle("error-border");
     }
     // window.alert("Please enter a valid e-mail address.");
     email.focus();
-    validated = false;
+    emailValidated = false;
   } else if (email.classList.contains("error-border")) {
     email.classList.toggle("error-border");
-    validated = true;
-  } else validated = true;
+    emailValidated = true;
+  } else emailValidated = true;
+
   if (name.value.length < 5) {
     if (!subject.classList.contains("error-border")) {
       name.classList.toggle("error-border");
     }
     // window.alert("Please enter a name with atleast 5 charecters");
     name.focus();
-    validated = false;
+    nameValidated = false;
   } else if (name.classList.contains("error-border")) {
     name.classList.toggle("error-border");
-    validated = true;
-  } else validated = true;
+    nameValidated = true;
+  } else nameValidated = true;
+
   if (message.value == "") {
-    if (!subject.classList.contains("error-border")) {
+    if (!message.classList.contains("error-border")) {
       message.classList.toggle("error-border");
     }
     // window.alert("Please write your message");
     message.focus();
-    validated = false;
+    messageValidated = false;
   } else if (message.classList.contains("error-border")) {
     message.classList.toggle("error-border");
-    validated = true;
-  } else validated = true;
+    messageValidated = true;
+  } else messageValidated = true;
+
   if (subject.value == "") {
     if (!subject.classList.contains("error-border")) {
       subject.classList.toggle("error-border");
     }
     // window.alert("Please write some subject");
     subject.focus();
-    validated = false;
+    subjectValidated = false;
   } else if (subject.classList.contains("error-border")) {
     subject.classList.toggle("error-border");
-    validated = true;
-  } else validated = true;
-  return validated;
+    subjectValidated = true;
+  } else subjectValidated = true;
+  
+  if (emailValidated && messageValidated && nameValidated && subjectValidated) return true
+  else return false
 };
 
 $("#submit-btn").on("click", (e) => {
