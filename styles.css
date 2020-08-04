@@ -598,7 +598,7 @@ select {
     display: none;
   }
   .post:hover {
-  transform: scale(1.0);
+  transform: none;
   }
   /*.post p{
   	font-size: 0.8em
