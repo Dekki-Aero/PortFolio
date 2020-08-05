@@ -188,6 +188,6 @@ $("#submit-btn").on("click", (e) => {
     sucessMessage.style.display = "block";
     setTimeout(() => {
       sucessMessage.style.display = "none";
-    }, 5000);
+    }, 10000);
   }
 });
